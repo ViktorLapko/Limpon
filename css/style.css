@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "OpenSans";
+    src: url(../font/OpenSans.ttf);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #7581a1;
+}
+a {
+    text-decoration: none;
+}
+h1 {
+   font-size: 80px;
+   font-weight: 600;
+   color: #192b59;
+}
+
+.nav {
+    font-size: 12px;
+    font-weight: 700;
+    color: #6e7ea9;
+    text-transform: uppercase;
+}
+
+.btn-free {
+    color: #fff;
+    font-weight: 400;
+    background-color: #1085e4;
+}
+
+.grid h2 {
+    color: #192b59;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.grid h2 span {
+    color: #1085e4;
+    font-size: 14px;
+    display: block;
+}
+
+.grid-item h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: #192b59;
+}
+
+.grid-item a {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1085e4;
+}
+
+.ps {
+    color: #192b59;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.grid-other p span {
+    color: #1085e4;
+    font-size: 12px;
+}
+
+.sabs span {
+    display: block;
+    color: #00bffe;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.sabs h2{
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.page-software h2 {
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.page-software dl dd {
+    color: #5a6789;
+    font-size: 16px;
+    font-weight: 700;    
+}
+
+.facts h2 span {
+    color: #1085e4;
+    font-size: 16px;
+    font-weight: 800;
+    display: block;
+    text-transform: uppercase;
+}
+.facts h2 {
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.facts ul li {
+    color: #1085e4;
+    font-weight: 700;
+    font-size: 14px;    
+}
+
+.facts ul li span {
+    color: #bacbdc;
+    font-weight: 700;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.apps h2 {
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+
+.papps {
+    font-size: 16px;
+    color: #c4d2dd;
+    font-weight: 700;
+    text-transform: uppercase;          
+}
+
+.analit1 h2 {
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;    
+}
+
+.analit2 h2 {
+    color: #192b59;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;    
+}
+
+.page-screen h2 span {
+    color: #1085e4;
+    font-size: 18px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: block;
+}
+
+.page-screen h2 {
+    color: #192b59;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
