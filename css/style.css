@@ -28,7 +28,7 @@ h1 {
     color: #1085e4;
     font-size: 16px;
     font-weight: 800;    
-    margin-bottom: 50px;
+    margin-bottom: 50px;/*?*/
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 14px;
@@ -117,6 +117,7 @@ h1 {
     border: 1px solid #1085e4;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-primary:hover {
     color: #1085e4;
@@ -132,6 +133,7 @@ h1 {
     border: 1px solid #cbdbe8;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-secondary:hover {
     background-color: #fff;
@@ -151,6 +153,7 @@ h1 {
     border: 1px solid #dce1e5;
     padding: 20px 40px;
     border-radius: 30px;
+    transition: 0.3s;
 }
 .btn-info:hover {
     color: #fff;
@@ -200,20 +203,22 @@ h1 {
                          "d f g"
                          "e f g"
                          "e h h";
+    grid-gap: 35px;
+    grid-template-columns: 1fr 1fr 1fr;                     
     max-width: 1110px;
     margin: 0 auto;
 }
 .grid-title {
-    grid-area: a;
+    grid-area: a;    
 }
 .grid-item-1 {
-    grid-area: b;
+    grid-area: b;   
 }
 .grid-item-2 {
     grid-area: c;
 }
 .grid-item-3 {
-    grid-area: d;
+    grid-area: d;    
 }
 .grid-item-4 {
     grid-area: e;
@@ -226,33 +231,41 @@ h1 {
 }
 .grid-text {
     grid-area: h;
-    padding: 0 20px 0;
-   
+    padding: 0 14px;   
+}
+.grid-name {
+    font-size: 14px;
+    color: #1085e4;
+}
+.grid-name span {
+    font-size: 16px;
+    font-weight: 700;
+    color: #192b59;
 }
 .grid h2 {
     color: #192b59;
     font-size: 40px;
     font-weight: 700;
+    margin-top: 0;
 }
 
 .grid h2 span {
     color: #1085e4;
     font-size: 14px;
-    display: block;
+    display: block;    
 }
 .grid-item {
     text-align: center;
-    box-shadow: 0 0 20px #f4f4f4; 
-    width: 95%;
-    height: 95%;  
-}
+    border-radius: 10px;
+    box-shadow: 0 9px 20px #f4f4f4; 
+    padding: 40px 29px 64px;        
+}    
 .grid-item h3{
     font-size: 20px;
     font-weight: 600;
     color: #192b59;
     margin-bottom: 18px;
 }
-
 .grid-item a {
     font-size: 14px;
     font-weight: 600;
@@ -261,37 +274,90 @@ h1 {
 .grid-icon {
     background-repeat: no-repeat;
     display: block;
-    margin: 0 auto 36px;
+    height: 92px;
+    margin: 0 auto 21px;
+    background-position: center;
 }
 .grid-icon-1 {
     background-image: url(../img/icon3.png);
-    width: 73px;
-    height: 79px;   
+    background-size: 73px 79px;
 }
 .grid-icon-2 {
     background-image: url(../img/icon2.png);
-    width: 89px;
-    height: 85px;
+    background-size: 89px 85px;
 }
 .grid-icon-3 {
     background-image: url(../img/icon1.png);
-    width: 79px;
-    height: 82px        
+    background-size: 79px 82px;
 }
 .grid-icon-4 {
     background-image: url(../img/icon4.png);
-    width: 109px;
-    height: 92px; 
+    background-size: 109px 92px;
 }
 .grid-icon-5 {
     background-image: url(../img/icon5.png);
-    width: 85px;
-    height: 90px; 
+    background-size: 85px 90px;
 }
 .grid-icon-6 {
     background-image: url(../img/icon6.png);
-    width: 100px;
-    height: 87px; 
+    background-size: 100px 87px; 
+}
+.page-software-icon {
+    display: block;
+    background-image: url(../img/software-icon.png);
+    background-repeat: no-repeat;
+    background-position: -28px 0;
+    width: 117px;   
+    height: 98px;
+}
+.page-software-flex {
+    display: flex;
+    justify-content: flex-end;
+}
+.software-img {
+    display: block;
+    background-image: url(../img/software-screen.png);
+    background-repeat: no-repeat;
+    width: 931px;
+    height: 760px;
+    position: absolute;
+    left: 0;
+    top: 118x;
+}
+.page-software-flex>div {
+    flex-basis: 55%;
+}
+.page-software .title-h2 {
+    max-width: 766px;
+    margin-top: 12px;
+    scroll-margin-bottom: 26px;
+}   
+.page-software-list {
+    margin-top: 30px;
+    height: 323px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.page-software-list::-webkit-scrollbar {
+    width: 4px;
+}
+.page-software-list::-webkit-scrollbar-track {
+    background: #f3f6ff; 
+}
+.page-software-list::-webkit-scrollbar-thumb {
+    background: #1085e4;    
+    border-radius: 5px;
+}
+.page-software-list dt {
+    color: #5a6789;
+    font-size: 16px;
+    font-weight: 700;
+   
+}
+.page-software-list dd {
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1.8;
 }
 .list-stat {
     display: flex;
@@ -315,28 +381,6 @@ h1 {
     letter-spacing: 0;
 }
 
-.ps {
-    color: #192b59;
-    font-weight: 400;
-    font-size: 14px;
-}
-
-/*.grid-other p span {
-    color: #1085e4;
-    font-size: 12px;
-}*/
-.page-software h2 {
-    color: #192b59;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 60px;
-}
-
-.page-software dl dt {
-    color: #5a6789;
-    font-size: 16px;
-    font-weight: 700;    
-}
 .apps h2 {
     color: #192b59;
     font-size: 50px;
@@ -489,8 +533,18 @@ h1 {
     background-size: cover;
     padding: 106px 0 99px;
 }
+.page-grid {
+    padding: 120px 0;
+}
+}
 .page-stat, .page-screen {
     background-color: #edf6ff;
+}
+.page-software {
+    background-image: url(../img/software-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 109px 0 115px 0;
 }
 .page-stat {
     padding: 116px 0 96px 0;
