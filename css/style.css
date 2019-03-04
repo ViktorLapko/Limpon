@@ -64,6 +64,9 @@ h1 {
 .page-subscribe .title-h2 span {
     font-size: 14px;
 }
+.content-app .title-h2 {
+    margin-bottom: 36px;
+}
 .wrap {
     max-width: 1110px;
     margin: 0 auto;    
@@ -248,7 +251,6 @@ h1 {
     font-weight: 700;
     margin-top: 0;
 }
-
 .grid h2 span {
     color: #1085e4;
     font-size: 14px;
@@ -314,23 +316,25 @@ h1 {
     display: flex;
     justify-content: flex-end;
 }
-.software-img {
+.software-pic {
     display: block;
-    background-image: url(../img/software-screen.png);
+    background-image: url(../img/software-pic.png);
     background-repeat: no-repeat;
-    width: 931px;
-    height: 760px;
+    width: 937px;
+    height: 986px;
+    background-size: 100% 100%;
+    background-position: 0 0;
     position: absolute;
-    left: 0;
-    top: 118x;
+    left: 25px;
+    bottom: -39px;
 }
 .page-software-flex>div {
     flex-basis: 55%;
 }
 .page-software .title-h2 {
-    max-width: 766px;
+    max-width: 560px;
     margin-top: 12px;
-    scroll-margin-bottom: 26px;
+    margin-bottom: 26px;
 }   
 .page-software-list {
     margin-top: 30px;
@@ -340,30 +344,75 @@ h1 {
 }
 .page-software-list::-webkit-scrollbar {
     width: 4px;
+    height: 4px;
 }
-.page-software-list::-webkit-scrollbar-track {
-    background: #f3f6ff; 
+.page-software-list::-webkit-scrollbar-button {
+    background-color: #1085e4;
+}
+.page-software-list::-webkit-scrollbar-track-piece {
+    background-color: #f3f6ff; 
 }
 .page-software-list::-webkit-scrollbar-thumb {
-    background: #1085e4;    
-    border-radius: 5px;
+    height: 50px;   
+    background-color: #1085e4;    
+    border-radius: 10px;
 }
 .page-software-list dt {
     color: #5a6789;
     font-size: 16px;
-    font-weight: 700;
-   
+    font-weight: 700;   
 }
 .page-software-list dd {
     margin-left: 0;
+    margin-bottom: 50px;
     font-size: 14px;
-    line-height: 1.8;
+    line-height: 1.75;
+    padding-right: 20px;
+}
+.page-app-text {
+    font-size: 16px;
+    color: #c4d2dd;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 27px;
+    margin-bottom: 20px;
+    letter-spacing: 3.5px;   
+}
+.page-app-list {    
+    padding: 0;
+    list-style-type: none;
+    margin-left: -7px;
+}
+.page-app-list>li {
+    display: inline-block;
+}
+.page-app-list>li>a {
+    background-image: url(../img/app.png);
+    background-repeat: no-repeat;
+    display: block;
+    width: 185px;
+    height: 77px;
+}
+.page-app-list>li>a.page-app-android {
+    background-position: 0 0;    
+}
+.page-app-list>li>a.page-app-ios {
+    background-position: -191px 0;    
+}
+.video-app {
+    position: absolute;
+    top: -61px;
+    right: -172px;
+}
+.content-app {
+    width: 55%;
 }
 .list-stat {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
     margin-top: 76px;
+    padding: 0;
 }
 .list-stat>li {
     color: #1085e4;
@@ -380,21 +429,6 @@ h1 {
     margin-bottom: 23px;
     letter-spacing: 0;
 }
-
-.apps h2 {
-    color: #192b59;
-    font-size: 50px;
-    font-weight: 600;
-    line-height: 60px;
-}
-
-.papps {
-    font-size: 16px;
-    color: #c4d2dd;
-    font-weight: 700;
-    text-transform: uppercase;          
-}
-
 .analit1 h2 {
     color: #192b59;
     font-size: 50px;
@@ -484,7 +518,7 @@ h1 {
 }   
 .box-subscribe-text {
     font-size: 18px;
-    max-width:437px;
+    max-width: 437px;
 }
 .box-subscribe-user {
     position: relative;
@@ -518,7 +552,6 @@ h1 {
 .box-subscribe-user input:-moz-placeholder           {color: #b1c3ee;}
 .box-subscribe-user input:-ms-input-placeholder      {color: #b1c3ee;}
 
-
 /*PAGE*/
 .page-header {
     background-image: url(../img/header-bg.png);
@@ -534,17 +567,15 @@ h1 {
     padding: 106px 0 99px;
 }
 .page-grid {
-    padding: 120px 0;
-}
+    padding: 134px 0 118px 0;
 }
 .page-stat, .page-screen {
     background-color: #edf6ff;
 }
-.page-software {
-    background-image: url(../img/software-bg.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 109px 0 115px 0;
+.page-software {    
+    padding: 109px 0 156px 0;
+    position: relative;
+    overflow: hidden
 }
 .page-stat {
     padding: 116px 0 96px 0;
@@ -566,4 +597,15 @@ h1 {
     background: -ms-linear-gradient(-45deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     background: linear-gradient(135deg, rgba(10,32,144,1) 0%, rgba(35,120,205,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0a2090', endColorstr='#2378cd', GradientType=1 );
+}
+.page-app {    
+    padding: 69px 0 82px 0;
+}
+.page-app .wrap {
+    position: relative;
+}
+.page-analytics {
+    background-image: url(../img/bg-analytics.png);
+    background-repeat: no-repeat;
+    margin-left: 20px; 
 }
