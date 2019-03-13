@@ -833,27 +833,52 @@ h1 {
 .flex-form>div {
     flex-basis: 47%;
 }
-.footer {
-    background-color: #192b59;
-    background-size: cover;            
-}
-.footer .flex-footer {
+
+.footer .footer-flex {
     max-width: 1100px;
     margin: 0 auto;     
     display: flex;
     justify-content: space-between;
     align-items: center;  
 }
-.flex-footer p {
+.footer-flex p {
     margin: 0;
     display: block;
     font-size: 16px;  
 }
+.footer-flex>p>a {
+    color: #1085e4;
+    text-transform: uppercase;
+}
  .social {
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   width: 160px;
+   list-style-type: none;
+}
+.social>li {
+    margin-left: 23px;
+}
+.social-facebook svg {
+    width: 16px;
+}
+.social-twitter svg {
+    width: 16px;
+}
+.social-behance svg {
+    width: 16px;
+}
+.social-pinterest svg {
+    width: 17px;
+}
+.social-foursquare svg {
+    width: 17px;
+}
+.social-link svg {
+    transition: 0.3s;
+    fill:#fff;
+}
+.social-link:hover svg {
+    fill: #1085e4;
 }
 /*PAGE*/
 .page-header {
@@ -866,6 +891,7 @@ h1 {
 }
 .page-company {
     background-image: url(../img/bg-company.png);
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 106px 0 99px;
@@ -965,5 +991,8 @@ h1 {
     background-size: cover;
     padding: 70px 0 121px 0;
 }
-
+.footer {
+    background-color: #192b59;
+    padding: 5px 0 4px 0;            
+}
 
